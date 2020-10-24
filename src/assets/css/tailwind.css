@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Text sizes */
+
+  .hero-title {
+    @apply text-3xl;
+  }
+
+  .title {
+    @apply text-xl;
+  }
+
+  .subtitle {
+    @apply text-lg;
+  }
+
+  .body {
+    @apply text-base;
+  }
+
+  .caption {
+    @apply text-sm;
+  }
+
+  /* Components */
+
+  .slide-image {
+    height: 340px;
+    width: 254px;
+  }
+
+  .tab {
+    @apply subtitle inline-block mr-5 text-gray-600;
+  }
+}
