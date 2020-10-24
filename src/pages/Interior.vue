@@ -10,7 +10,7 @@
     <!-- Card -->
     <div class="absolute bg-white bottom-0 left-0 z-10 rounded-3xl px-5 py-6 w-full">
       <!-- Card header -->
-      <div class="flex">
+      <div class="flex items-center">
         <img
           class="rounded-full w-16 h-16"
           src="../assets/images/photos/generated.photos_v3_8.jpg"

@@ -30,7 +30,7 @@
         to="/interior"
         class="inline-block slide-image rounded-2xl mr-5"
         v-for="slide in slides"
-        v-bind:key="slide.id"
+        :key="slide.id"
         :style="slide"
         tag="li"
       ></router-link>
@@ -46,9 +46,11 @@
     <ol
       class="pl-5 list-none overflow-auto hide-scrollbar w-auto whitespace-no-wrap py-5"
     >
-      <li
+      <router-link
+        to="/projects"
+        tag="li"
         v-for="user in users"
-        v-bind:key="user.name"
+        :key="user.name"
         :class="
           `
             user
@@ -66,7 +68,7 @@
         <p class="whitespace-normal mt-2 caption text-gray-600">
           {{ user.name }}
         </p>
-      </li>
+      </router-link>
     </ol>
     <!-- Footer -->
     <div class="flex items-center rounded-lg shadow-lg px-5 py-2">
