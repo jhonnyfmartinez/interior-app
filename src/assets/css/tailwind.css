@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+#app {
+  height: 100%;
+}
+
 @layer components {
   /* Text sizes */
 
@@ -36,13 +42,16 @@
     @apply subtitle inline-block mr-5 text-gray-600;
   }
 
+  .avatar {
+    @apply w-12 h-12 rounded-full border-white border-2 border-solid shadow-lg -ml-3 inline-block;
+  }
+
   .hide-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
   }
-
 }

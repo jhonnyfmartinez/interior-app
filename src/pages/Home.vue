@@ -13,7 +13,9 @@
       </div>
     </div>
     <!-- Tabs -->
-    <ol class="pl-5 my-2 list-none overflow-auto hide-scrollbar w-auto whitespace-no-wrap pb-2">
+    <ol
+      class="pl-5 my-2 list-none overflow-auto hide-scrollbar w-auto whitespace-no-wrap pb-2"
+    >
       <li class="text-black tab">Popular</li>
       <li class="tab">Recommend</li>
       <li class="tab">New</li>
@@ -21,15 +23,17 @@
       <li class="tab">People</li>
     </ol>
     <!-- Images -->
-    <ol class="pl-5 list-none overflow-auto hide-scrollbar w-auto whitespace-no-wrap pb-3">
-      <li
+    <ol
+      class="pl-5 list-none overflow-auto hide-scrollbar w-auto whitespace-no-wrap pb-3"
+    >
+      <router-link
+        to="/interior"
+        class="inline-block slide-image rounded-2xl mr-5"
         v-for="slide in slides"
         v-bind:key="slide.id"
-        :class="
-          `slide-image inline-block rounded-2xl mr-5`
-        "
         :style="slide"
-      ></li>
+        tag="li"
+      ></router-link>
     </ol>
     <!-- Actions buttons -->
     <div class="flex px-5 py-2">
@@ -39,7 +43,9 @@
       <chevron-right-icon class="text-gray-500"></chevron-right-icon>
     </div>
     <!-- Users list -->
-    <ol class="pl-5 list-none overflow-auto hide-scrollbar w-auto whitespace-no-wrap py-5">
+    <ol
+      class="pl-5 list-none overflow-auto hide-scrollbar w-auto whitespace-no-wrap py-5"
+    >
       <li
         v-for="user in users"
         v-bind:key="user.name"
