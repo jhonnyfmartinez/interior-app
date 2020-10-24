@@ -35,4 +35,14 @@
   .tab {
     @apply subtitle inline-block mr-5 text-gray-600;
   }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
 }

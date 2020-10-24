@@ -13,7 +13,7 @@
       </div>
     </div>
     <!-- Tabs -->
-    <ol class="ml-5 list-none overflow-auto w-auto whitespace-no-wrap pb-3">
+    <ol class="pl-5 my-2 list-none overflow-auto hide-scrollbar w-auto whitespace-no-wrap pb-2">
       <li class="text-black tab">Popular</li>
       <li class="tab">Recommend</li>
       <li class="tab">New</li>
@@ -21,7 +21,7 @@
       <li class="tab">People</li>
     </ol>
     <!-- Images -->
-    <ol class="ml-5 list-none overflow-auto w-auto whitespace-no-wrap pb-3">
+    <ol class="pl-5 list-none overflow-auto hide-scrollbar w-auto whitespace-no-wrap pb-3">
       <li
         v-for="slide in slides"
         v-bind:key="slide.id"
@@ -39,7 +39,7 @@
       <chevron-right-icon class="text-gray-500"></chevron-right-icon>
     </div>
     <!-- Users list -->
-    <ol class="ml-5 list-none overflow-auto w-auto whitespace-no-wrap py-5">
+    <ol class="pl-5 list-none overflow-auto hide-scrollbar w-auto whitespace-no-wrap py-5">
       <li
         v-for="user in users"
         v-bind:key="user.name"
@@ -57,7 +57,7 @@
           class="w-16 h-16 rounded-full mx-auto shadow-lg"
           :style="user.styles"
         ></div>
-        <p class="whitespace-normal caption text-gray-600">
+        <p class="whitespace-normal mt-2 caption text-gray-600">
           {{ user.name }}
         </p>
       </li>
